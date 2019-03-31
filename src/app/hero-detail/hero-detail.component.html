@@ -1,0 +1,10 @@
+<div @fade *ngIf="hero" id="hero">
+  <div class="hero__card">
+    <img *ngIf="hero.img" class="hero__avatar" src="{{hero.img}}" alt="hero.name">
+    <div class="hero__details">
+      <h2 class="hero__title">{{hero.name}}</h2>
+      <input [(ngModel)]="hero.name" class="hero__input" name="name" type="text" placeholder="fantastic name">
+      <a class="hero__close" (click)="goBack()">Close This</a>
+    </div>
+  </div>
+</div>

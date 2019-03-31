@@ -1,0 +1,15 @@
+<ul>
+  <!-- <li *ngFor="let hero of heroes" (click)="onSelect(hero)" class="listed" [class.selected]="hero === selectedHero"> -->
+  <li *ngFor="let hero of heroes" class="listed">
+    <!-- <a href="#hero"><span class="id">{{hero.id}}</span>{{hero.name}}</a> -->
+    <a routerLink="/detail/{{hero.id}}">
+      <div class="listed__specs">
+        <span class="listed__id">{{hero.id}}</span>
+        <img *ngIf="hero.img" class="listed__img" src="{{hero.img}}" alt="hero.name">
+      </div>
+      <span class="listed__name">{{hero.name}}</span>
+    </a>
+  </li>
+</ul>
+
+<!-- <app-hero-detail [hero]="selectedHero" (deselect)="onDeselect($event)"></app-hero-detail> -->

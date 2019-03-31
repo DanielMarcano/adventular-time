@@ -1,0 +1,9 @@
+<div class="dashboard">
+  <h1 class="dashboard__title">Top Heroes</h1>
+  <div class="dashboard__grid">
+      <a routerLink="/detail/{{hero.id}}" *ngFor="let hero of heroes" class="dashboard__link">
+          <img class="dashboard__hero-img" *ngIf="hero.img" src="{{hero.img}}" alt="">
+          <h4 class="dashboard__hero-name">{{hero.name}}</h4>
+      </a>
+  </div>
+</div>

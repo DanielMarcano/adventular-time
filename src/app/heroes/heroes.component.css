@@ -1,0 +1,53 @@
+ul {
+    background-color: black;
+}
+
+.listed {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 7vh;
+}
+
+.listed:hover {
+    cursor: pointer;
+}
+
+.listed:hover .listed__name {
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.listed__specs {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    min-width: 5%;
+}
+
+.listed__id {
+    /* width: 3vh; */
+    color: white;
+    text-align: center;
+    display: inline-block;
+    flex-grow: 1;
+    background-color: #04f3ffd1;
+}
+
+.listed__img {
+    width: 3vh;
+    height: 3vh;
+    display: inline-block;
+    margin: 2vh 2vh;
+}
+
+.listed__name {
+    width: 95%;
+    display: inline-block;
+    transition: all .3s;
+}
+
+.selected {
+    background-color: #04f3ffd1;
+}

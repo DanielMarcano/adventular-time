@@ -1,0 +1,21 @@
+.menu {
+    width: 100%;
+    max-height: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    margin-bottom: 4rem;
+}
+
+.menu__link {
+    flex: 1;
+    text-align: center;
+    color: white;
+    transition: all .5s;
+    display: inline-block;
+}
+
+.menu__link:hover {
+    border-bottom: 10px solid white;
+}
+
