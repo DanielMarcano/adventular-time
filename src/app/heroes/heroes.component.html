@@ -1,15 +1,19 @@
-<ul>
-  <!-- <li *ngFor="let hero of heroes" (click)="onSelect(hero)" class="listed" [class.selected]="hero === selectedHero"> -->
-  <li *ngFor="let hero of heroes" class="listed">
-    <!-- <a href="#hero"><span class="id">{{hero.id}}</span>{{hero.name}}</a> -->
-    <a routerLink="/detail/{{hero.id}}">
-      <div class="listed__specs">
-        <span class="listed__id">{{hero.id}}</span>
-        <img *ngIf="hero.img" class="listed__img" src="{{hero.img}}" alt="hero.name">
-      </div>
-      <span class="listed__name">{{hero.name}}</span>
-    </a>
-  </li>
-</ul>
+
+    <mat-icon mat-list-icon>folder</mat-icon>
+
+<mat-list>
+  <mat-list-item *ngFor="let hero of heroes" class="listed">
+    <img *ngIf="hero.img" class="listed__img" src="{{hero.img}}" alt="hero.name">
+    <h4 mat-line>{{hero.name}}</h4>
+    <p mat-line> {{hero.id}} </p>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  <h3 mat-subheader>Notes</h3>
+  <mat-list-item *ngFor="let note of notes">
+    <mat-icon mat-list-icon>note</mat-icon>
+    <h4 mat-line>{{note.name}}</h4>
+    <p mat-line> {{note.updated | date}} </p>
+  </mat-list-item>
+</mat-list>
 
 <!-- <app-hero-detail [hero]="selectedHero" (deselect)="onDeselect($event)"></app-hero-detail> -->

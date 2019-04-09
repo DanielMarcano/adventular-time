@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 @import url('https://fonts.googleapis.com/css?family=Merienda');
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline');
 
 :root {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-    box-sizing: border-box;
-    font-family: 'Merienda', 'Gloria Hallelujah', cursive;
-    font-size: 1rem;
-    background-color: #F54291;
-    color: white;
+  box-sizing: border-box;
+  font-family: 'Fascinate Inline', 'Merienda', 'Gloria Hallelujah', cursive;
+  font-size: 1rem;
+  background-color: #F54291;
+  color: white;
 }
 
 *, *::after, *::before {
